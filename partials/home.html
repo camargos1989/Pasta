@@ -1,0 +1,12 @@
+﻿<h1 class="page-title text-center">Pasta Online - Rafael Faria</h1>
+<h2 class="page-subtitle text-center">Clique na imagem correspondente para visualização!</h2>
+<div class="row">
+    <div class="col-md-2 col-xs-4" ng-repeat="category in categories">
+        <a href="#/cards/category/{{category.id}}" style="padding: 10px">
+            <img class="img-responsive" ng-src="{{category.image}}"></img>
+        </a>
+    </div>
+    <div class="col-md-2 col-xs-4">
+    </div>
+    <h2 ng-show="!categories.length" class="last-updated text-center">Carregando... aguarde alguns segundos</h2>
+</div>

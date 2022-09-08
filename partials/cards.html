@@ -1,0 +1,28 @@
+﻿<h1 class="page-title text-center">{{categories[currentCategory].name || "All Cards"}}</h1>
+<div class="row">
+    <div class="col-md-4 col-sm-6 col-xs-12"
+         ng-repeat="card in filteredCards = (cards | filter: filterCards | orderBy: sort)">
+        <div class="card">
+
+            <div class="card-info">
+                <span>{{card.name}}</span>
+            </div>
+
+            <div class="card-image-wrapper">
+                <div class="card-image">
+                    <img ng-src="{{card.image || 'http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=' + card.id + '&type=card'}}" />
+                </div>
+                <span class="card-additional-info" ng-show="card.additionalInfo" ng-style="{ color: card.additionalInfoColor }">{{card.additionalInfo}}</span>
+            </div>
+
+            <div class="card-info card-price">
+                <span>{{card.price | currency}}</span>
+            </div>
+            <div class="card-info card-qty">
+                <span>Qtde: {{card.qty}}x</span>
+            </div>
+        </div>
+    </div>
+    <h2 ng-show="!cards.length">Carregando...</h2>
+    <h2 ng-show="cards.length && !filteredCards.length">Não existem cartas nessa categoria</h2>
+</div>
