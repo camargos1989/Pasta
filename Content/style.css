@@ -1,105 +1,123 @@
 ﻿@font-face {
-    font-family: 'Conv_ChelseaMarket-Regular';
-    src: url('../fonts//ChelseaMarket-Regular.eot');
-    src: local('☺'), url('../fonts//ChelseaMarket-Regular.woff') format('woff'), url('../fonts//ChelseaMarket-Regular.ttf') format('truetype'), url('../fonts//ChelseaMarket-Regular.svg') format('svg');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "Conv_ChelseaMarket-Regular";
+  src: url("../fonts//ChelseaMarket-Regular.eot");
+  src: local("☺"), url("../fonts//ChelseaMarket-Regular.woff") format("woff"),
+    url("../fonts//ChelseaMarket-Regular.ttf") format("truetype"),
+    url("../fonts//ChelseaMarket-Regular.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.filters {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .ng-cloak {
-    display: none;
+  display: none;
 }
 
 @media (min-width: 1200px) {
-    .container {
-        width: 75%;
-    }
-    .page-title {
-        font-size: 7em;
-    }
-    .page-subtitle {
-        font-size: 4em;
-    }
+  .container {
+    width: 75%;
+  }
+  .page-title {
+    font-size: 7em;
+    margin-top: 100px;
+  }
+  .page-subtitle {
+    font-size: 4em;
+  }
+}
+
+@media (min-width: 700px) {
+  .page-title {
+    margin-top: 100px;
+  }
 }
 
 body {
-    font-family: 'Conv_ChelseaMarket-Regular';
-    background-color: #525252;
-    padding-top: 70px;
+  font-family: "Conv_ChelseaMarket-Regular";
+  background-color: #525252;
+  padding-top: 70px;
 }
 
-.page-title, .page-subtitle {
-    color: white;
+.page-title,
+.page-subtitle {
+  color: white;
 }
 
 .last-updated {
-    color: red;
+  color: red;
 }
 
 .card {
-    padding: 15px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    background-color: white;
-    border-radius: 15px;
-    position: relative;
+  padding: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: white;
+  border-radius: 15px;
+  position: relative;
 }
 
 .card-additional-info {
-    position: absolute;
-    width: 100%;
-    bottom: 45%;
-    text-align: center;
-    font-weight: bold;
-    font-size: 3em;
-    color: #ff0000;
-    text-shadow: 3px 3px 0 #000,
+  position: absolute;
+  width: 100%;
+  bottom: 45%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 3em;
+  color: #ff0000;
+  text-shadow: 3px 3px 0 #000,
     /* Simulated effect for Firefox and Opera
-       and nice enhancement for WebKit */
-    -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+       and nice enhancement for WebKit */ -1px -1px
+      0 #000,
+    1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 .card-info {
-    text-align: center;
-    width: 100%;
-    opacity: 1;
-    font-weight: bold;
-    color: #000000;
+  text-align: center;
+  width: 100%;
+  opacity: 1;
+  font-weight: bold;
+  color: #000000;
 }
 
 .card-price {
-    font-family: 'Arial';
-    font-size: 3em;
-    font-weight: 900;
+  font-family: "Arial";
+  font-size: 3em;
+  font-weight: 900;
 }
 
 .card-qty {
-    font-family: 'Arial';
-    font-size: 2em;
-    font-weight: 700;
+  font-family: "Arial";
+  font-size: 2em;
+  font-weight: 700;
 }
 
 .card-image-wrapper {
-    width: 100%;
-    display: inline-block;
-    position: relative;
+  width: 100%;
+  display: inline-block;
+  position: relative;
 }
 
 .card-image-wrapper:after {
-    padding-top: 140%;
-    display: block;
-    content: '';
+  padding-top: 140%;
+  display: block;
+  content: "";
 }
 
 .card-image {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
 }
 
 .card-image img {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
